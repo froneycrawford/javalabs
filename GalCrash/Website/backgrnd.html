@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+	<TITLE>GalCrash - Background Introduction</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 700, 600);
+}
+// -->
+</SCRIPT>
+</HEAD>
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF" LINK="#00FFFF">
+
+<!-- Page divided using TABLES -->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic -->
+<TR><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0"></A>
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+        <TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+                <TR>
+                        <TD ALIGN="left" VALIGN="top">
+                        <IMG SRC="menu1.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+                        <MAP NAME="imap">
+                        <AREA SHAPE="RECT" COORDS="0,0,150,40" ALT="Background" HREF="backgrnd.html">
+                        <AREA SHAPE="RECT" COORDS="0,40,150,80" ALT="Interaction Dynamics" HREF="dynamic.html">
+                        <AREA SHAPE="RECT" COORDS="0,80,150,120" ALT="Starbursts and AGN" HREF="starburst.html">
+                        <AREA SHAPE="RECT" COORDS="0,120,150,160" ALT="Making Ellipticals" HREF="ellipt.html">
+                        <AREA SHAPE="RECT" COORDS="0,160,150,210" ALT="Minor Mergers" HREF="mmerger.html">
+                        <AREA SHAPE="RECT" COORDS="0,210,150,262" ALT="Applet" HREF="javascript:launchApplet()">
+                        <AREA SHAPE="RECT" COORDS="0,262,150,302" ALT="Controls" HREF="controls.html">
+                        <AREA SHAPE="RECT" COORDS="0,302,150,342" ALT="Lab" HREF="labIntro.html">
+                        <AREA SHAPE="RECT" COORDS="0,342,150,382" ALT="Links" HREF="links.html">
+                        <AREA SHAPE="DEFAULT">
+                        </MAP>
+                        </TD>
+                </TR>
+        </TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>     </TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR>
+<H2><FONT COLOR="#FF0000"><I>Interactions and Mergers of Galaxies</I></FONT><BR>
+Chris Mihos, Case Western Reserve University</H2>
+
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=3>
+        <TR><TD ROWSPAN=2>
+                For much of the twentieth century -- once the vast distances to galaxies was 
+                known -- galaxies were thought to be ``island universes,'' forming and 
+                evolving in isolation with no contact between one another. 
+                In this picture, 
+                the processes which shape the galaxies we see today are uniquely determined by 
+                the initial conditions under which galaxies form and processes completely 
+                internal to the galaxies themselves. 
+        </TD>
+        <TD ALIGN=CENTER><IMG SRC="BKGNDpics/ngc2997.jpg" WIDTH=340 HEIGHT=272 ALT="NGC 2997" BORDER=0></TD></TR>
+        <TR><TD ALIGN=CENTER><FONT SIZE=-1>Figure 1: NGC 2997, a nearby spiral galaxy (Dave Malin/AAO).</FONT></TD></TR>
+</TABLE>
+
+<P>
+As galaxy catalogs began to grow, however, more and more examples of paired 
+galaxies were found, as well as many peculiar galaxies with long, luminous 
+"plumes" and "tails" emanating from their bodies. These galaxies were
+found to have anomalously blue colors, arguing that their star forming
+properties were quite different from normal galaxies. Examples were found of
+galaxy pairs so strongly perturbed that they were suggested as possible examples
+of actual merging encounters. Meanwhile, astronomers began to use computer
+simulation to study the effects of nearby companions on galaxies, and found 
+that many of the properties of these peculiar galaxies could be explained
+through gravitational interactions and mergers of galaxies. 
+
+<P>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=3>
+        <TR>
+                <TD ALIGN=CENTER><IMG SRC="BKGNDpics/mice.jpg" WIDTH=218 HEIGHT=348 ALT="Mice" BORDER=0></TD>
+                <TD ROWSPAN=2>    </TD>         
+<TD ROWSPAN=2>
+
+From these studies, an alternative picture of galaxy evolution began to grow.
+Rather than evolving in isolation, galaxies are found in clusters and groups, 
+and can interact quite strongly with their nearby companions. These 
+interactions can have a profound impact on the properties of galaxies, 
+resulting in intense
+bursts of star formation, the onset of quasar-like activity in galactic 
+nuclei, and perhaps even the complete transformation of spiral galaxies into 
+ellipticals. Studies of galaxies in the early Universe show a significant
+fraction of interacting and merging systems, and theories of cosmological 
+structure formation indicate that most galaxies have had some form of
+strong interaction during their lifetime. Rather than being rare events,
+galaxy interactions may be the dominant process shaping the evolution
+of the galaxy population in general.
+</TD>
+                </TR>
+        <TR>
+                <TD ALIGN=CENTER><FONT SIZE=-1> Figure 2: The Mice (NGC 4676), an interacting pair of galaxies <BR>(<A href=http:/www.cv.nrao.edu/~jhibbard/home.html/>John Hibbard</A>, <A href=http://www.nrao.edu>NRAO</A>).
+ </FONT></TD></TR>
+</TABLE>
+</TD></TR>
+
+<!-- This is the bottom navigation buttons -->
+<BR><BR>
+<TR><TD COLSPAN=3>
+<TABLE ALIGN=CENTER BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH="70%"><TR>
+	<TD ALIGN="left" VALIGN="center"><!IMG SRC="pArrow.gif" WIDTH=50 HEIGHT=50 BORDER=0 ALT="Previous Page"></TD>
+	<TD ALIGN="right" VALIGN="center"><A HREF="dynamic.html"><IMG SRC="nArrow.gif" WIDTH=50 HEIGHT=50 BORDER=0 ALT="Next Page"></A></TD>
+</TR></TABLE>
+
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>

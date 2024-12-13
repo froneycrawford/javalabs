@@ -1,0 +1,235 @@
+<HTML>
+
+<HEAD>
+	<TITLE>GalCrash - Interaction Dynamics</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 700, 600);
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF" LINK="#00FFFF">
+
+<!-- Page divided using TABLES-->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic-->
+<TR ><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0"></A>
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+	<TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+		<TR>
+			<TD ALIGN="left" VALIGN="top">
+			<IMG SRC="menu1a.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+			<MAP NAME="imap">
+			<AREA SHAPE="RECT" COORDS="0,0,150,40" ALT="Background" HREF="backgrnd.html">
+			<AREA SHAPE="RECT" COORDS="0,40,150,80" ALT="Interaction Dynamics" HREF="dynamic.html">
+			<AREA SHAPE="RECT" COORDS="0,80,150,120" ALT="Starbursts and AGN" HREF="starburst.html">
+			<AREA SHAPE="RECT" COORDS="0,120,150,160" ALT="Making Ellipticals" HREF="ellipt.html">
+			<AREA SHAPE="RECT" COORDS="0,160,150,210" ALT="Minor Mergers" HREF="mmerger.html">
+			<AREA SHAPE="RECT" COORDS="0,210,150,262" ALT="Applet" HREF="javascript:launchApplet()">
+			<AREA SHAPE="RECT" COORDS="0,262,150,302" ALT="Controls" HREF="controls.html">
+			<AREA SHAPE="RECT" COORDS="0,302,150,342" ALT="Lab" HREF="labIntro.html">
+			<AREA SHAPE="RECT" COORDS="0,342,150,382" ALT="Links" HREF="links.html">
+			<AREA SHAPE="DEFAULT">
+			</MAP>
+			</TD>
+		</TR>
+	</TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>&nbsp; &nbsp; &nbsp;</TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR>
+<H2><FONT COLOR="#FF0000"><I>Dynamics of Interacting Galaxies</I></FONT><BR></H2>
+<P>
+The evolution of interacting galaxies is governed largely by gravitational
+effects. That these interactions can have a profound effect on the 
+participating galaxies is clear from the observational record. 
+Morphologically, interacting galaxies are found to sport long bridges and 
+tails, stellar bars and/or enhanced 
+spiral structure, and often severely distorted main bodies (see Figure 3). 
+At first, many astronomers believed the long streamers of stars and 
+gas seen emanating from some interacting galaxies to be shaped by magnetic 
+fields or nuclear jets -- the thinness and linearity of these features
+made a gravitational origin seem unlikely.  However, computer models 
+of interacting galaxies in the early 1970s by Alar and Juri Toomre showed 
+convincingly that these streamers were the simple
+consequence of gravitational tides acting on rotating disk galaxies, and
+these streamers were dubbed "tidal tails."
+<BR><BR><BR>
+
+
+<CENTER><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=3>
+	<TD ALIGN=CENTER><IMG SRC="BKGNDpics/Hibbardr.jpg" WIDTH=497 HEIGHT=415 ALT="Hibbard" BORDER=0></TD></TR>
+	<TR><TD ALIGN=CENTER><FONT SIZE=-1><NOBR> Figure 3: 
+   Interacting galaxies. Clockwise from top left: Arp 295, NGC 4676, Arp 299, 
+   NGC 7252, NGC 3921.</NOBR><BR> (<A href=http:/www.cv.nrao.edu/~jhibbard/home.html/>
+   John Hibbard</A>, <A href=http://www.nrao.edu>NRAO</A>) </FONT></TD></TR>
+</TABLE></CENTER>
+
+<BR>
+
+<P>
+To understand the development of tidal tails, recall that tidal forces --
+the differential gravitational forces from a nearby mass  -- act to stretch
+an object radially. In this manner, our own Moon raises bulges on the
+surface of the Earth which give rise to our oceanic tides. Similarly, when two
+galaxies experience a close encounter, their tidal fields stretch one
+another radially. This stretching, combined with the galaxies' rotation,
+causes the stars and gas in the outskirts of each galaxy to ``shear off''
+from their parent galaxies. Material on the far side of each disk -- away 
+from the companion galaxy -- is ejected into long, thin tidal tails, while 
+material on the near side is drawn towards the companion.  Depending on the 
+encounter geometry, the nearside material may actually form a physical
+``bridge'' between the galaxies, along which material may flow from one galaxy
+to another.  Because of the coupled effects of gravitational tides and
+galactic rotation, the development of tidal features depends strongly on
+resonances between the rotational and orbital motions of the galaxies. 
+Prograde encounters, in which the galaxies sense of rotation and 
+orbital motion is matched, are most effective at tail-building. The lack of
+spin-orbit resonances in retrograde encounters, on the other hand,
+acts to suppress the formation of tidal tails.
+
+<P>
+The early computer models of Toomre and Toomre demonstrated these basics
+of building tidal tails, and opened the door to the use of computer 
+simulation to study the evolution of interacting galaxies. Because of the
+long timescales involved in galaxy interactions -- hundreds of millions or
+billions of years --
+observations of interacting systems show only individual ``snapshots'' of
+a complex evolutionary process. Piecing together these varying snapshots into
+a coherent sequence is a task made difficult by the unknown initial conditions
+of the different interactions. However, computer simulations can be used to
+study a wide variety of well-defined galaxy interactions, and by studying the 
+evolution of these models the <I> observational </I> snapshots can
+be more easily placed into a evolutionary context.
+
+<P>
+Computer simulations employ a Lagrangian technique known as <I>N</I>-body modeling, 
+wherein galaxies are represented by <I>N</I> discrete particles whose initial
+positions and velocities sample the phase space distribution of normal
+disk galaxy. Current simulations employ 10<SUP>6</SUP> -- 10<SUP>7</SUP> particles, so
+that each particle represents 10<SUP>4</SUP> -- 10<SUP>5</SUP> stars (simulating galaxies
+star by star is still well beyond current computational abilities). The
+<I>N</I>-body model is then advanced forward in discrete time steps by calculating
+the net gravitational acceleration acting on each particle from the other 
+particles, then advancing each particle forward in time given its position, 
+velocity, and acceleration (for gas, hydrodynamic forces must also be
+considered; these are discussed in a later section).
+
+<P>
+One example of such a computer model of colliding galaxies is shown in 
+Figure 4.  In this model, two equal mass spiral galaxies are placed on an 
+initially parabolic orbit with a closest approach of <I>2.5h</I>, where <I>h</I> is 
+the exponential scale length of the disk stars. One disk is perfectly prograde 
+while the second is inclined by 71<SUP>o</SUP> to the orbital plane. As the 
+galaxies first collide, the tidal forces act to distort each disk, launching 
+the tidal tails. Moving at parabolic velocity, the galaxies quickly pass one 
+another and move apart, reaching maximum separation at <I>T</I>~40 (unit time
+is roughly 10 million years). After this point, the galaxies reverse their 
+motions and fall back on one another, merging together to form a ellipsoidal 
+merger remnant around <I>T</I>~60. 
+<BR>
+
+<CENTER><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=3>
+	<TD ALIGN=CENTER><IMG SRC="BKGNDpics/mihosfig1.gif" WIDTH=469 HEIGHT=303 ALT="Mihos - Computer Model of Colliding Galaxies" BORDER=0></TD></TR>
+	<TR><TD ALIGN=CENTER><FONT SIZE=-1> Figure 4:
+   Computer model of colliding galaxies. The total time covered by the model is
+   approximately<BR> 750 million years. <NOBR>(<A href=http:/burro.astr.cwru.edu/>
+   Chris Mihos</A>, <A href=http://burro.astr.cwru.edu/dept/>Case Western 
+   Reserve University</A>)</NOBR> </FONT></TD></TR>
+</TABLE></CENTER>
+<BR>
+
+<P>
+After first passage, in addition to forming the extended tidal tails, the
+galaxies themselves develop a strong internal response to the interaction.
+The passage of a companion seeds a <I>m = 2</I> gravitational perturbation in the 
+disk of each galaxy; these perturbations can then be amplified into strong 
+spiral arms or even dramatic central bars by the self-gravity of the disk.  
+The detailed response of the
+galaxies depends crucially on their internal structure: if the stellar disk 
+dominates the mass distribution in the inner portion of the galaxy, the disk
+self-gravity can easily amplify the perturbation into a strong bar. On the 
+other hand, if the galaxy is bulge- or dark matter-dominated in its interior, 
+the disk is more stable against growing <I>m = 2</I> bar modes, and spiral structure 
+is the more likely outcome.
+<P>
+What causes the rapid merging of the two galaxies? Certainly there is a
+transfer of orbital energy to internal motions of the stars in each galaxy --
+it is this energy transfer that provides the energy necessary to launch the
+tidal tails. The amount of energy carried away by the tidal tails amounts 
+to only a few percent of the total orbital energy, however; if this was
+the sole energy sink, interacting galaxies would slowly spiral together over
+many orbital periods, rather than the rapid merging seen in Figure 4. Indeed,
+early investigations into the collisions of galaxies argued that subsequent
+mergers would be quite rare, unless the collision happened to be extremely
+penetrating.
+<P>
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=3>
+<TR><TD ROWSPAN=2><!-- Text formatted next to image-->
+In fact the luminous portions of galaxies represent only a small fraction of 
+the total galactic mass -- galaxies are embedded in massive, extended ``dark 
+matter halos.'' These dark matter halos extend to many tens or even hundreds 
+of kiloparsecs, such that encounters where the luminous galaxies seem to pass 
+by one another may in fact be penetrating encounters for the dark halos. When 
+this happens, dynamical friction ensures rapid orbital decay. As the galaxies 
+pass through each others dark halos, they set up a trailing wake in the halo 
+mass distributions, creating a gravitational drag on the galaxies' relative 
+motion. As a result, energy and angular momentum are transferred from the 
+binary orbit to the internal motions of the dark halo -- the orbit decays and 
+the halos are spun up. It is this ability for dark matter halos to absorb 
+orbital energy and angular momentum that makes galaxy mergers possible; 
+without halos, mergers would be rare indeed.
+	</TD>
+	<TD ALIGN=CENTER VALIGN=BOTTOM><IMG SRC="BKGNDpics/angmom.gif" WIDTH=288 HEIGHT=541 ALT="Angmom" BORDER=0></TD></TR>
+	<TR><TD ALIGN=CENTER><FONT SIZE=-1> Figure 5:
+   Evolution of the angular momentum content in colliding galaxies. Notice how
+   the spin angular momentum of the dark halo increases as the orbital angular
+   momentum of the disk+halos decreases. 
+   <BR>(From <A href=http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1992ApJ...400..460H&db_key=AST&high=37ced7dde904786>
+   Hernquist 1992</A>)
+ </FONT></TD></TR>
+</TABLE>
+
+<!-- This is the bottom navigation buttons -->
+<BR><BR>
+<TR><TD COLSPAN=3>
+<TABLE ALIGN=CENTER BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH="70%"><TR>
+	<TD ALIGN="left" VALIGN="center"><A HREF="backgrnd.html"><IMG SRC="pArrow.gif" WIDTH=50 HEIGHT=50 BORDER=0 ALT="Previous Page"></A></TD>
+	<TD ALIGN="right" VALIGN="center"><A HREF="starburst.html"><IMG SRC="nArrow.gif" WIDTH=50 HEIGHT=50 BORDER=0 ALT="Next Page"></A></TD>
+</TR></TABLE>
+
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>

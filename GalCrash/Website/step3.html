@@ -1,0 +1,116 @@
+<HTML>
+
+<HEAD>
+	<TITLE>GalCrash - Lab Exercises: Real Galaxies</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 700, 600);
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF">
+
+<!-- Page divided using TABLES-->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic-->
+<TR ><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0">
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+	<TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+		<TR>
+			<TD ALIGN="left" VALIGN="top">
+			<IMG SRC="menu4c.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+			<MAP NAME="imap">
+			<AREA SHAPE="RECT" COORDS="0,0,150,45" ALT="Background" HREF="backgrnd.html">
+			<AREA SHAPE="RECT" COORDS="0,45,150,85" ALT="Applet" HREF="javascript:launchApplet()">
+			<AREA SHAPE="RECT" COORDS="0,85,150,125" ALT="Controls" HREF="controls.html">
+			<AREA SHAPE="RECT" COORDS="0,125,150,165" ALT="Lab" HREF="labIntro.html">
+			<AREA SHAPE="RECT" COORDS="0,165,150,195" ALT="Step 1" HREF="step1.html">
+			<AREA SHAPE="RECT" COORDS="0,195,150,238" ALT="Step 2" HREF="step2.html">			
+			<AREA SHAPE="RECT" COORDS="0,238,150,278" ALT="Step 3" HREF="step3.html">
+			<AREA SHAPE="RECT" COORDS="0,278,150,320" ALT="Step 4" HREF="step4.html">
+			<AREA SHAPE="RECT" COORDS="0,320,150,350" ALT="Step 5" HREF="step5.html">
+			<AREA SHAPE="RECT" COORDS="0,320,150,390" ALT="Links" HREF="links.html">
+			<AREA SHAPE="DEFAULT">
+			</MAP>
+			</TD>
+		</TR>
+	</TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>&nbsp; &nbsp; &nbsp;</TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR><BR>
+
+<FONT COLOR="#FF0000"><H3>Real Galaxies</H3></FONT>
+
+<ul>
+<li>Here is a collection of real interacting galaxies. Model
+3 of them using the GalCrash applet. In each case, explain why you chose
+the parameters you did (mass ratio, pericenter, galaxy geometry). Make
+sure to make a note of the time at which the simulation matches the observed
+galaxy.<BR><BR>
+
+<!-- This is for the pics with names above them.  It is set up in one table --> 
+<CENTER><TABLE BORDER=0 CELLSPACING=5 CELLPADDING=5>
+<TR>
+	<TD ALIGN=CENTER>Antennae:</TD>
+	<TD ALIGN=CENTER>Cartwheel:</TD>
+</TR>
+<TR>
+	<TD VALIGN=TOP><CENTER><IMG SRC="pics/antennae.jpg" WIDTH=200 HEIGHT=204 BORDER=0></CENTER></TD>
+	<TD VALIGN=TOP><CENTER><IMG SRC="pics/cartwheel.jpg" WIDTH=261 HEIGHT=200 BORDER=0></CENTER></TD>
+</TR>
+<TR><TD COLSPAN=2><BR><BR><BR><BR></TD></TR>
+<TR>
+	<TD ALIGN=CENTER>Messier 51:</TD>
+	<TD ALIGN=CENTER>Mice:</TD>
+</TR>
+<TR>
+	<TD VALIGN=TOP><CENTER><IMG SRC="pics/messier51.jpg" WIDTH=301 HEIGHT=200 BORDER=0></CENTER></TD>
+	<TD VALIGN=TOP><CENTER><IMG SRC="pics/mice.jpg" WIDTH=310 HEIGHT=200 BORDER=0></CENTER></TD>
+</TR>
+<TR><TD COLSPAN=2><BR><BR><BR><BR></TD></TR>
+<TR>
+	<TD COLSPAN=2 ALIGN=CENTER>NGC 7252:</TD>
+</TR>
+<TR>
+	<TD COLSPAN=2 VALIGN=TOP><CENTER><IMG SRC="pics/ngc7252.jpg" WIDTH=299 HEIGHT=200 BORDER=0></CENTER>
+</TR>
+</TABLE></CENTER>		
+<BR>
+<li>How unique is your solution? What information would you find
+helpful to further constrain your solution?</li>
+</ul>
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>

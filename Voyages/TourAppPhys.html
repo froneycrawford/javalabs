@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+	<TITLE>Applet Physics</TITLE>
+
+	<STYLE TYPE="text/css">
+  	<!--
+	BODY {background-color: #000066;
+		  background-image: url(media/bg_main.jpg);
+		  background-attachment: fixed }
+	B {font-weight: bold }
+	P {font-size:14pt}
+	TD.title   {color: #CCCCCC}
+	TD.texture {font-size: 14pt; color: #CCCCCC}
+	TD.caption {text-align: center; 
+				font-size: smaller; color: 0000CC; 
+				font-weight: bold;}
+	-->
+	</STYLE>
+
+</HEAD>
+<BODY LINK="#FFCCCC" ALINK="#FF3333" VLINK="#CCCCFF">
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=10>
+<TR VALIGN=top><TD CLASS=title>
+<H2>Voyager Applets:<BR><I>Involved Physics</I></H2>
+</TD>
+<TD ALIGN=right>
+	<A HREF="TourMain.html" TARGET="_top">
+	<IMG SRC="media/title.jpg" BORDER=0 ALT="Tour Home">
+	</A></TD>
+</TR>
+</TABLE>
+
+<CENTER>
+<TABLE WIDTH=95% BORDER=0 CELLSPACING=20 CELLPADDING=10>
+
+<TR><TD class=texture> 
+<P>The physics of this applet are pretty simple -- orbits in a Keplerian (i.e.,
+point mass) gravitational potential. For this problem, analytic solutions
+exist for the position and velocity of an orbiting object as a function of 
+time, given its orbital properties. See the "<A TARGET="_top" HREF="TourMain_Links.html">Links</A>" section for references describing orbital calculations.</P>
+
+<P>We do make a few simplifying assumptions, most notably:</P>
+<UL>
+<LI>The orbits of the planets are circular (they're close to circular, but not perfectly so).</LI>
+<LI>The planets all move in single plane (again, they're close to coplanar in the ecliptic, but not perfectly so).</LI>
+</UL>
+
+<P>For Grand Tour, we calculate energy in an admittedly simplistic fashion.
+Each time the spacecraft needs to change velocity (to leave a planet, or
+to rendezvous with a planet), the energy used is considered simply to be
+the difference in the kinetic energy between those two velocities. So there's
+energy used each time it leaves a planet (where it needs to be boosted
+into a higher orbit) and each time it arrives at a planet (where it needs
+to match the planet's orbital speed).</P>
+</TD></TR>
+
+</TABLE>
+
+
+</CENTER>
+</BODY>
+</HTML>

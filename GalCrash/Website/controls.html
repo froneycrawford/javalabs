@@ -1,0 +1,107 @@
+<HTML>
+
+<HEAD>
+	<TITLE>GalCrash - Applet Control Explanation</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 700, 600);
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF">
+
+<!-- Page divided using TABLES-->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic-->
+<TR ><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0">
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+	<TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+		<TR>
+			<TD ALIGN="left" VALIGN="top">
+			<IMG SRC="menu3.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+			<MAP NAME="imap">
+			<AREA SHAPE="RECT" COORDS="0,0,150,45" ALT="Background" HREF="backgrnd.html">
+			<AREA SHAPE="RECT" COORDS="0,45,150,85" ALT="Applet" HREF="javascript:launchApplet()">
+			<AREA SHAPE="RECT" COORDS="0,85,150,120" ALT="Controls" HREF="controls.html">
+			<AREA SHAPE="RECT" COORDS="0,120,150,170" ALT="Physics of the Applet" HREF="appPhys.html">
+			<AREA SHAPE="RECT" COORDS="0,170,150,215" ALT="Lab" HREF="labIntro.html">
+			<AREA SHAPE="RECT" COORDS="0,215,150,255" ALT="Links" HREF="links.html">
+			<AREA SHAPE="DEFAULT">
+			</MAP>
+			</TD>
+		</TR>
+	</TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>&nbsp; &nbsp; &nbsp;</TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR><BR>
+
+<H2><FONT COLOR="#FF0000">Applet Controls Explained</FONT></H2>
+
+<FONT SIZE=+1>
+<FORM>
+	<TT><INPUT TYPE="button" VALUE=" Start " onClick="alert(' NOT HERE! On the APPLET, silly! ')"></TT> - starts or continues the simulation.<BR>
+	<TT><INPUT TYPE="button" VALUE=" Stop  " onClick="alert(' NOT HERE! On the APPLET, silly! ')"></TT> - pauses the simulation.<BR>
+	<TT><INPUT TYPE="button" VALUE=" Reset " onClick="alert(' NOT HERE! On the APPLET, silly! ')"></TT> - initializes the simulation.<BR>
+</FORM>
+<P>
+<FONT COLOR="00FF00">To <font color="#00FFFF">Rotate</font> along the x and y axes:</FONT><BLOCKQUOTE>click and drag inside the viewport.</BLOCKQUOTE>
+<FONT COLOR="00FF00">To <font color="#00FFFF">Zoom</font> (or <font color="#00FFFF">Rotate</font>
+about the z-axis):</FONT> <BLOCKQUOTE>hold the Shift key and drag inside the viewport.</BLOCKQUOTE>
+
+<P><FORM>
+<INPUT TYPE="checkbox" CHECKED> <FONT COLOR="#00FF00">Green Centered</FONT><BLOCKQUOTE> centers the view in on the green (main) galaxy, allowing the viewport to move with it.</BLOCKQUOTE>
+<INPUT TYPE="checkbox" CHECKED> <FONT COLOR="#00FF00">Friction</FONT><BLOCKQUOTE> turns on dynamical friction, calculated using a Chandrasekhar-like analytic implementation. This option will allow galaxies to merge.</BLOCKQUOTE>
+<INPUT TYPE="checkbox" CHECKED> <FONT COLOR="#00FF00">Big Halos</FONT><BLOCKQUOTE> makes the (unseen) dark matter halos four times bigger and more massive</BLOCKQUOTE>
+</FORM>
+
+<P>
+You can change:
+<ul>
+	<li><font color="#00FF00">Peri:</font>&nbsp;the distance of closes approach [in kiloparsecs].
+
+	<li><font color="#00FF00">Red Galaxy mass:</font>&nbsp;the mass of the Red (companion) galaxy [in terms of the Green (main) galaxy's mass, ie 1=equal mass].
+
+	<li><font color="#00FF00">Galaxy theta, Galaxy phi:</font> the inclination and slew of the primary galaxy in the orbital plane [in degrees].
+
+	<li><font color="#00FF00">Companion theta, Companion phi:</font> the inclination and slew of the companion galaxy in the orbital plane [in degrees].
+
+	<li><font color="#00FF00">Number of Stars:</font> the total number of stars in the simulation, divided evenly between galaxies. The smaller the
+	number, the faster this applet will run; the bigger the number, the cooler the
+	simulation. That's life...
+</ul>
+
+	
+</TD></TR></TABLE>
+</BODY>
+</HTML>

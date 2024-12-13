@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+	<TITLE>Jupiter's Moons</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow(url, name, width, height) {
+   var x = "10";
+   var y = "10";
+   var params = "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height;
+   window.open(url, name, params);
+   }
+function launchApplet() {
+   var appWinName = "Moons_Applet"; 
+   var url = "moonApplet.html";
+   launchWindow(url, appWinName, 675, 600);
+   }
+// -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="javascript1.1">
+// <!--
+var pics;
+pics = new Array();
+var picCount = 0;
+
+// function to set array of image name, along with two images
+function preload(name, first, second) {  
+    pics[picCount] = new Array(3);
+    pics[picCount][0] = new Image();
+    pics[picCount][0].src = first;
+    pics[picCount][1] = new Image();
+    pics[picCount][1].src = second;
+    pics[picCount][2] = name;
+    picCount++;
+}
+
+//function to turn images on
+function on(name){
+    for (i = 0; i < picCount; i++) {
+      if (document.images[pics[i][2]] != null)
+        if (name != pics[i][2]) { 
+          document.images[pics[i][2]].src = pics[i][0].src;
+        } else {
+          document.images[pics[i][2]].src = pics[i][1].src;
+        }
+    }
+}
+
+// function to turn images off
+function off(){
+     for (i = 0; i < picCount; i++) {
+      if (document.images[pics[i][2]] != null) 
+        document.images[pics[i][2]].src = pics[i][0].src;
+    }
+}
+
+// preloads the images
+preload("bkgnd", "b_back.gif", "b_back_2.gif");
+preload("bGalileo", "b_backG.gif", "b_backG_2.gif");
+preload("bMoons", "b_backMOONS.gif", "b_backMOONS_2.gif");
+preload("bKepler", "b_backKL.gif", "b_backKL_2.gif");
+preload("bObserv", "b_backOBSRV.gif", "b_backOBSRV_2.gif");
+preload("bPlanets", "b_backOP.gif", "b_backOP_2.gif");
+preload("applet", "b_applet.gif", "b_applet_2.gif");
+preload("controls", "b_controls.gif", "b_controls_2.gif");
+preload("appPhys", "b_phys.gif", "b_phys_2.gif");
+preload("lab", "b_lab.gif", "b_lab_2.gif");
+preload("links", "b_links.gif", "b_links_2.gif");
+
+
+// -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="#000000"> 
+
+<TABLE ALIGN=center BORDER=0 CELLSPACING=0 CELLPADDING=2>
+<TR><TD>
+<CENTER>
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=2 BORDERCOLOR="#FFFFFF"><TR><TD>
+	<A HREF="../web/main.html" TARGET="_top">
+	<IMG SRC="../JLicon.gif" WIDTH=110 HEIGHT=87 BORDER=0 ALT="JavaLab Home"></A>
+</TD></TR></TABLE>
+</CENTER>
+<BR><BR>
+</TD></TR>
+	
+	<TR><TD><A HREF="main_back.html" TARGET="_top" onMouseOver="on('bkgnd')" onMouseOut="off()">
+			<IMG NAME="bkgnd" SRC="b_back.gif" WIDTH=140 HEIGHT=30 BORDER=0 ALT="Background Info"></A>
+			</TD></TR>
+	<TR><TD><A HREF="../Applet/satellites.html" TARGET="_top" onMouseOver="on('applet')" onMouseOut="off()">
+			<IMG NAME="applet" SRC="b_applet.gif" WIDTH=140 HEIGHT=30 BORDER=0 ALT="Applet Launcher"></A>
+			</TD></TR>
+	<TR><TD><A HREF="controls.html" TARGET="moonMain" onMouseOver="on('controls')" onMouseOut="off()">
+			<IMG NAME="controls" SRC="b_controls.gif" WIDTH=140 HEIGHT=30 BORDER=0 ALT="Applet Controls Explained"></A>
+			</TD></TR>
+	<TR><TD><A HREF="phys.html" TARGET="moonMain" onMouseOver="on('appPhys')" onMouseOut="off()">
+			<IMG NAME="appPhys" SRC="b_phys.gif" WIDTH=140 HEIGHT=50 BORDER=0 ALT="Physics of the Applet"></A>
+			</TD></TR>
+	<TR><TD><A HREF="lab.html" TARGET="moonMain" onMouseOver="on('lab')" onMouseOut="off()">
+			<IMG NAME="lab" SRC="b_lab.gif" WIDTH=140 HEIGHT=30 BORDER=0 ALT="Lab Exercises"></A>
+			</TD></TR>
+	<TR><TD><A HREF="links.html" TARGET="moonMain" onMouseOver="on('links')" onMouseOut="off()">
+			<IMG NAME="links" SRC="b_links.gif" WIDTH=140 HEIGHT=30 BORDER=0 ALT="Other Java Links"></A>
+			</TD></TR>
+
+<TR><TD>
+</TD></TR>
+	
+</TABLE>
+
+</CENTER>
+</BODY>
+</HTML>

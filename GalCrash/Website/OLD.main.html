@@ -1,0 +1,105 @@
+<HTML>
+
+<HEAD>
+	<TITLE>GalCrash - Main Page</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 1000, 800);
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF">
+
+<!-- Page divided using TABLES-->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic-->
+<TR ><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0">
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+	<TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+		<TR>
+			<TD ALIGN="left" VALIGN="top">
+			<IMG SRC="menu.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+			<MAP NAME="imap">
+			<AREA SHAPE="RECT" COORDS="0,0,150,45" ALT="Background" HREF="backgrnd.html">
+			<AREA SHAPE="RECT" COORDS="0,45,150,85" ALT="Applet" HREF="javascript:launchApplet()">
+			<AREA SHAPE="RECT" COORDS="0,85,150,125" ALT="Controls" HREF="controls.html">
+			<AREA SHAPE="RECT" COORDS="0,125,150,165" ALT="Lab" HREF="labIntro.html">
+			<AREA SHAPE="RECT" COORDS="0,165,150,205" ALT="Links" HREF="links.html">
+			<AREA SHAPE="DEFAULT">
+			</MAP>
+			</TD>
+		</TR>
+	</TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>&nbsp; &nbsp; &nbsp;</TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR><BR>
+<!IMG SRC="introPIC.gif" HEIGHT=420 WIDTH=650 ALT="Colliding Galaxies" BORDER="0"> 
+
+<FONT SIZE=+2>Welcome to <FONT COLOR="#FFFF00"><B><I>Galaxy Crash JavaLab!</I></B></FONT></FONT> <BR><BR>
+<TABLE BORDER=0 CELLPADDING=5 CELLSPACING=5>
+<TR><TD><CENTER><IMG SRC="collide.gif" HEIGHT=164 WIDTH=164 ALT="Colliding Galaxies" BORDER=0"></CENTER></TD>
+<TD><BLOCKQUOTE>
+This is an interactive java applet which allows you to
+model galaxy collisions on your own computer. With this applet you can
+study how galaxies collide and merge gravitationally and how the effects
+of the collision depend on the properties of the galaxies. You can also
+recreate collisions between real interacting galaxies observed in the sky.</BLOCKQUOTE></TD>
+</TR></TABLE>
+<BR>
+<P>
+<BR><BR>
+The <FONT COLOR="#FFFF00">buttons</FONT> to the left will lead you to the following areas:
+<UL>
+	<LI><TT><FONT COLOR=#FF0000>Background:</FONT></TT> scientific information on galaxy collisions
+	<LI><TT><FONT COLOR=#FF0000>Applet: </FONT></TT>the Galaxy Crash applet itself
+	<LI><TT><FONT COLOR=#FF0000>Controls: </FONT></TT>information on how to run the applet, and how the physics are calculated.
+	<LI><TT><FONT COLOR=#FF0000>Lab: </FONT></TT>Galaxy Crash exercises that help you explore the physics behind galaxy collisions.
+	<LI><TT><FONT COLOR=#FF0000>Links:</FONT></TT> links to other sites with lots of good information on colliding galaxies.
+</UL>
+
+Good luck. Remember, when you work with Galaxy Crash you are not watching 
+movies, but actually running your own real-time models. <B><FONT COLOR="#FFFFOO">You</FONT></B> control the 
+action, so feel free to explore!
+<P>
+
+<I><FONT COLOR="00FFFF">
+Credits:<BR>
+- Scientific Development: Chris Mihos (CWRU), Greg Bothun (UOregon) <BR>
+- Java Programmers: Chris Mihos, Dave Caley (UOregon), Bob Vawter (CWRU) <BR>
+- Web Design: Cameron McBride (CWRU) <BR>
+</FONT></I>
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>

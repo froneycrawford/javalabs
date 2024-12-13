@@ -1,0 +1,98 @@
+<HTML>
+
+<HEAD>
+	<TITLE>GalCrash - Lab Exercises: Merger Dynamics</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 700, 600);
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF">
+
+<!-- Page divided using TABLES-->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic-->
+<TR ><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0">
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+	<TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+		<TR>
+			<TD ALIGN="left" VALIGN="top">
+			<IMG SRC="menu4b.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+			<MAP NAME="imap">
+			<AREA SHAPE="RECT" COORDS="0,0,150,45" ALT="Background" HREF="backgrnd.html">
+			<AREA SHAPE="RECT" COORDS="0,45,150,85" ALT="Applet" HREF="javascript:launchApplet()">
+			<AREA SHAPE="RECT" COORDS="0,85,150,125" ALT="Controls" HREF="controls.html">
+			<AREA SHAPE="RECT" COORDS="0,125,150,165" ALT="Lab" HREF="labIntro.html">
+			<AREA SHAPE="RECT" COORDS="0,165,150,195" ALT="Step 1" HREF="step1.html">
+			<AREA SHAPE="RECT" COORDS="0,195,150,238" ALT="Step 2" HREF="step2.html">			
+			<AREA SHAPE="RECT" COORDS="0,238,150,278" ALT="Step 3" HREF="step3.html">
+			<AREA SHAPE="RECT" COORDS="0,278,150,320" ALT="Step 4" HREF="step4.html">
+			<AREA SHAPE="RECT" COORDS="0,320,150,350" ALT="Step 5" HREF="step5.html">
+			<AREA SHAPE="RECT" COORDS="0,320,150,390" ALT="Links" HREF="links.html">
+			<AREA SHAPE="DEFAULT">
+			</MAP>
+			</TD>
+		</TR>
+	</TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>&nbsp; &nbsp; &nbsp;</TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR><BR>
+
+<FONT COLOR="#FF0000"><H3>Merger Dynamics</H3></FONT>
+<p>
+Now we will look at how the timescale for merging depends
+on the parameters of the encounter. First, make sure the "friction"
+box is checked so that dynamical friction is operating. Then:
+
+<ul>
+
+<li>Set companion mass to one, pericenter distance to 10 kpc,
+and inclination of both disks to 0. Run the simulation and write down how
+long it takes the galaxies to merge.</li>
+
+<li> Now change the companion mass, and write down how long it
+takes the galaxies to merge, for several different companion masses. How
+and why does the merging time depend on mass of the galaxies?</li>
+
+<li>Reset companion mass to one, and change the pericenter distance.
+How and why does the merging time depend on the pericenter distance?</li>
+
+</ul>
+
+
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>

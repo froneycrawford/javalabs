@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>GalCrash Applet</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+function showControls() { 
+          Cwindow=window.open("","QuickControls","resizable=1,toolbar=no,directories=no,menubar=no,scrollbars=yes,width=300,height=375");
+          Cwindow.document.writeln("<BODY BGCOLOR=000000 TEXT=FFFFFF>"); 
+          Cwindow.document.writeln("<TITLE>Quick Controls</TITLE>");
+          Cwindow.document.writeln("<FONT COLOR=FFFF00><B>To:</B></FONT><FONT SIZE=-1><UL><LI><FONT COLOR=FF0000>Rotate:</FONT> click and drag in viewport<LI><FONT COLOR=FF0000>Zoom:</FONT> hold <I>SHIFT</I> and drag</UL></FONT>");
+		  Cwindow.document.writeln("<FONT COLOR=FFFF00><B>Controls:</B></FONT><FONT SIZE=-1><UL><LI><FONT COLOR=00FFFF>Green Centered:</FONT> follows green galaxy <LI><FONT COLOR=00FFFF>Friction:</FONT> enables dynamical friction<LI><FONT COLOR=00FFFF>Big Halos:</FONT> enlarges dark matter halos</UL></FONT>");
+		  Cwindow.document.writeln("<FONT COLOR=FFFF00><B>Variables:</B></FONT><FONT SIZE=-1><UL><LI><FONT COLOR=00FFFF>Peri:</FONT> separation distance in kpc<LI><FONT COLOR=00FFFF>Red Galaxy Mass:</FONT> set in terms of green mass<LI><FONT COLOR=00FFFF>Theta, Phi:</FONT> inclination and slew of galaxies<LI><FONT COLOR=00FFFF>Number of Stars:</FONT> total stars in simulation</UL></FONT>");
+          Cwindow.document.writeln("</FONT><CENTER><FORM><INPUT TYPE='button' VALUE=\"Hide QuickControls\" onClick='window.close()'>");
+          Cwindow.document.writeln("</FORM></CENTER></BODY></HTML>");
+          Cwindow.document.close();
+}
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#00FFFF">
+
+<CENTER><TABLE BORDER=6 CELLPADDING=2 CELLSPACING=2>
+<TR>
+	<TD ALIGN="center" VALIGN="center">
+	<APPLET CODE="GalCrash" CODEBASE="../GalCrash/" WIDTH=640 HEIGHT=500></APPLET>
+	</TD>
+</TR></TABLE>
+<TABLE WIDTH=100% BORDER=0 CELLPADDING=5 CELLSPACING=5>
+<TR VALIGN="center">
+	<TD ALIGN="left"><A HREF="main.html" TARGET="main"><IMG SRC="appWebsite.gif" WIDTH=120 HEIGHT=20 BORDER=0 ALT="GalCrash Website"></A></TD>
+	<TD ALIGN="center"><A HREF="javascript:showControls()" onClick=showControls()><IMG SRC="appControl.gif" WIDTH=120 HEIGHT=20 BORDER=0 ALT="Shows Controls for Applet"></A></TD>
+	<TD ALIGN="right"><A HREF="javascript: self.close()"><IMG SRC="appClose.gif" WIDTH=120 HEIGHT=20 BORDER=0 ALT="Closes Applet Window"></A></TD>
+</TABLE></CENTER>
+
+
+
+</HTML>

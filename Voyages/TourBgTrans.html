@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+	<TITLE>Transfer Orbits</TITLE>
+
+	<STYLE TYPE="text/css">
+  	<!--
+	BODY {background-color: #000066;
+		  background-image: url(media/bg_main.jpg);
+		  background-attachment: fixed }
+	B {font-weight: bold }
+	P {font-size:14pt}
+	TD.title   {color: #CCCCCC}
+	TD.texture {font-size: 14pt; color: #CCCCCC}
+	TD.caption {text-align: center; 
+				font-size: smaller; color: 0000CC; 
+				font-weight: bold;}
+	-->
+	</STYLE>
+
+</HEAD>
+<BODY LINK="#FFCCCC" ALINK="#FF3333" VLINK="#CCCCFF">
+
+<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=10>
+<TR VALIGN=top><TD CLASS=title>
+<H2>Background:<BR><I>Transfer Orbits</I></H2>
+</TD>
+<TD ALIGN=right>
+	<A HREF="TourMain.html" TARGET="_top">
+	<IMG SRC="media/title.jpg" BORDER=0 ALT="Tour Home">
+	</A></TD>
+</TR>
+</TABLE>
+
+<CENTER>
+<TABLE WIDTH=95% BORDER=0 CELLSPACING=20 CELLPADDING=10>
+
+<TR><TD class=texture> 
+<P>To move from one planet to another, you need to change your orbit. For
+example, to move from the Earth to Jupiter, you need to plot an orbit
+which takes you from 1 AU from the Sun (the Earth's orbital distance)
+to 5.2 AU from the Sun (Jupiter's orbital distance). There are many such orbits
+that will do that, but the simplest orbit -- and the one which would
+require the least amount of energy -- is called a Hohmann transfer orbit.</P>
+
+<P>Think of yourself on the Earth (or really, in orbit around the Earth).
+Because you are moving with the Earth, you are essentially in a circular
+orbit around the Sun, moving at with a certain orbital speed (29.5 km/s,
+in fact). If you boosted your speed a little, you would no longer be
+on a circular orbit, but you would start moving outwards from the Sun on
+an elliptical orbit. Eventually you would reach aphelion (the furthest
+point from the Sun on the orbit) and start to fall back inwards. A Hohmann
+transfer orbit is the orbit where aphelion occurs <i>just</i> at Jupiter's distance
+from the Sun -- in other words, you added just enough energy to your orbit
+at the Earth to get out to Jupiter.</P>
+
+<P>So a Hohmann transfer orbit has a perihelion distance equal to your
+original distance from the Sun, and an aphelion distance equal to where
+you want to go:</P>
+
+<BR><CENTER>
+<IMG SRC="media/trans_orbit.jpg" BORDER=0>
+</CENTER><BR>
+
+<P>Oh, there's one more complication: You want Jupiter to actually be there when 
+you get out to its orbit. In other words, you have to time your launch
+just right so that you and Jupiter meet up at the right time! How do you
+do this? Once you calculate your orbit, you should be able to figure
+out how long it takes to go from the Earth to Jupiter (using Kepler's
+Third Law). Then, knowing how long it takes for Jupiter to make one
+full orbit, you can calculate how far along its orbit Jupiter will
+travel while the probe is on its way. If Jupiter will travel 1/4 of
+its orbit, you want to launch when Jupiter is 1/4 of an orbit (ie, 
+90 degrees) away from the rendezvous point. (More accurately, the 
+numbers are 23% of the orbit, and so you need to launch when Jupiter
+is 83 degrees away from the rendezvous point.)</P>
+
+<BR><CENTER>
+<IMG SRC="media/trans_orbit_total.jpg" BORDER=0>
+</CENTER>
+</TD></TR>
+
+</TABLE>
+
+
+</CENTER>
+</BODY>
+</HTML>

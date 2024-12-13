@@ -1,0 +1,108 @@
+<HTML>
+
+<HEAD>
+	<TITLE>GalCrash - Lab Exercises: Formation of Tidal Tails</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 700, 600);
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF">
+
+<!-- Page divided using TABLES-->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic-->
+<TR ><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0">
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+	<TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+		<TR>
+			<TD ALIGN="left" VALIGN="top">
+			<IMG SRC="menu4a.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+			<MAP NAME="imap">
+			<AREA SHAPE="RECT" COORDS="0,0,150,45" ALT="Background" HREF="backgrnd.html">
+			<AREA SHAPE="RECT" COORDS="0,45,150,85" ALT="Applet" HREF="javascript:launchApplet()">
+			<AREA SHAPE="RECT" COORDS="0,85,150,125" ALT="Controls" HREF="controls.html">
+			<AREA SHAPE="RECT" COORDS="0,125,150,165" ALT="Lab" HREF="labIntro.html">
+			<AREA SHAPE="RECT" COORDS="0,165,150,195" ALT="Step 1" HREF="step1.html">
+			<AREA SHAPE="RECT" COORDS="0,195,150,238" ALT="Step 2" HREF="step2.html">			
+			<AREA SHAPE="RECT" COORDS="0,238,150,278" ALT="Step 3" HREF="step3.html">
+			<AREA SHAPE="RECT" COORDS="0,278,150,320" ALT="Step 4" HREF="step4.html">
+			<AREA SHAPE="RECT" COORDS="0,320,150,350" ALT="Step 5" HREF="step5.html">
+			<AREA SHAPE="RECT" COORDS="0,320,150,390" ALT="Links" HREF="links.html">
+			<AREA SHAPE="DEFAULT">
+			</MAP>
+			</TD>
+		</TR>
+	</TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>&nbsp; &nbsp; &nbsp;</TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR><BR>
+
+<FONT COLOR="#FF0000"><H3>Formation of Tidal Tails</H3></FONT>
+
+<p>
+Here we will study the formation and evolution of tidal
+tails, the long streamers of stars which are ejected when galaxies collide.
+Remember that these features are caused by a combination of gravitational
+tidal force and the rotation of galaxies.
+<ul>
+
+<li>Set the companion mass equal to one, so that we have an equal
+mass encounter, and run the default simulation. Then, keeping pericenter
+distance and galaxy orientation angles constant, change the companion mass
+and watch how the tails develop in each case. How does the development
+of the tidal tails change as the mass of the companion changes? Why does
+this happen?</li>
+
+<li>Now reset the companion mass to one, and change the pericenter
+distance. How do the tails change as you make the encounter more distant?
+Why does it change like this?</li>
+
+<li>Now reset pericenter distance to 10 kpc, and change the inclination
+of the galaxy disks (theta, measured with respect to the orbital plane).
+Remember now that the simulation is 3-dimensional, so you may need to "grab
+and rotate" the simulation to see the tails from different viewing angles.
+How does the formation of the tails depend on galaxy inclination? Why does
+this happen?</li>
+
+<li>Many tidal tails appear very thin and linear -- how can you
+get those kinds of tails?</li>
+
+</ul>
+
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+	<TITLE>Background NavBar</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 10;
+   var y = 10;
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+// -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="javascript1.1">
+// <!--
+var pics;
+pics = new Array();
+var picCount = 0;
+
+// function to set array of image name, along with two images
+function preload(name, first, second) {  
+    pics[picCount] = new Array(3);
+    pics[picCount][0] = new Image();
+    pics[picCount][0].src = first;
+    pics[picCount][1] = new Image();
+    pics[picCount][1].src = second;
+    pics[picCount][2] = name;
+    picCount++;
+}
+
+//function to turn images on
+function on(name){
+    for (i = 0; i < picCount; i++) {
+      if (document.images[pics[i][2]] != null)
+        if (name != pics[i][2]) { 
+          document.images[pics[i][2]].src = pics[i][0].src;
+        } else {
+          document.images[pics[i][2]].src = pics[i][1].src;
+        }
+    }
+}
+
+// function to turn images off
+function off(){
+     for (i = 0; i < picCount; i++) {
+      if (document.images[pics[i][2]] != null) 
+        document.images[pics[i][2]].src = pics[i][0].src;
+    }
+}
+
+// preloads the images
+preload("bkgnd", "media/background.jpg", "media/background_active.jpg");
+preload("applet", "media/applet.jpg", "media/applet_active.jpg");
+preload("controls", "media/controls.jpg", "media/controls_active.jpg");
+preload("appPhys", "media/appphys.jpg", "media/appphys_active.jpg");
+preload("links", "media/links.jpg", "media/links_active.jpg");
+preload("lab", "media/lab.jpg", "media/lab_active.jpg");
+preload("orbits", "media/orbits.jpg", "media/orbits_active.jpg");
+preload("trans", "media/trans_orbits.jpg", "media/trans_orbits_active.jpg");
+preload("missions", "media/missions.jpg", "media/missions_active.jpg");
+
+// -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY background="media/bg_navbar.jpg">
+<!-- BGCOLOR="#000000" -->
+
+<TABLE ALIGN="center" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR><TD>
+<CENTER><A HREF="../web/main.html" TARGET="_top">
+		<IMG SRC="media/JLicon.gif" WIDTH=110 HEIGHT=87 BORDER=0 ALT="JavaLab Home"></A><HR>
+</TD></TR>
+	
+	<TR><TD ALIGN="center"><A HREF="TourNavEx.html" TARGET="navbar" onMouseOver="on('bkgnd')" onMouseOut="off()">
+			<IMG NAME="bkgnd" SRC="media/background.jpg" WIDTH=120 HEIGHT=30 BORDER=0 ALT="Background Info"></A>
+			</TD></TR>
+	<TR><TD><A HREF="TourBgOrbits.html" TARGET="TourMain" onMouseOver="on('orbits')" onMouseOut="off()">
+			<IMG NAME="orbits" SRC="media/orbits.jpg" WIDTH=120 HEIGHT=30 BORDER=0 ALT="Orbits"></A>
+			</TD></TR>
+	<TR><TD><A HREF="TourBgTrans.html" TARGET="TourMain" onMouseOver="on('trans')" onMouseOut="off()">
+			<IMG NAME="trans" SRC="media/trans_orbits.jpg" BORDER=0 ALT="Transfer Orbits"></A>
+			</TD></TR>	
+	<TR><TD><A HREF="TourBgMissions.html" TARGET="TourMain" onMouseOver="on('missions')" onMouseOut="off()">
+			<IMG NAME="missions" SRC="media/missions.jpg" WIDTH=120 HEIGHT=30 BORDER=0 ALT="Missions"></A>
+			</TD></TR>
+	<TR><TD ALIGN="center"><A HREF="TourMain_Applets.html" TARGET="_top" onMouseOver="on('applet')" onMouseOut="off()">
+			<IMG NAME="applet" SRC="media/applet.jpg" WIDTH=120 HEIGHT=30 BORDER=0 ALT="Applets"></A>
+			</TD></TR>
+	<TR><TD ALIGN="center"><A HREF="TourMain_Controls.html" TARGET="_top" onMouseOver="on('controls')" onMouseOut="off()">
+			<IMG NAME="controls" SRC="media/controls.jpg" WIDTH=120 HEIGHT=30 BORDER=0 ALT="Applet Controls Explained"></A>
+			</TD></TR>
+	<TR><TD ALIGN="center"><A HREF="TourMain_AppPhys.html" TARGET="_top" onMouseOver="on('appPhys')" onMouseOut="off()">
+			<IMG NAME="appPhys" SRC="media/appphys.jpg" WIDTH=120 HEIGHT=60 BORDER=0 ALT="Physics of the Applet"></A>
+			</TD></TR>
+	<TR><TD ALIGN="center"><A HREF="TourMain_Lab.html" TARGET="_top" onMouseOver="on('lab')" onMouseOut="off()">
+			<IMG NAME="lab" SRC="media/lab.jpg" WIDTH=120 HEIGHT=30 BORDER=0 ALT="Lab Exercises"></A>
+			</TD></TR>
+	<TR><TD ALIGN="center"><A HREF="TourMain_Links.html" TARGET="_top" onMouseOver="on('links')" onMouseOut="off()">
+			<IMG NAME="links" SRC="media/links.jpg" WIDTH=120 HEIGHT=30 BORDER=0 ALT="Other Links"></A>
+			</TD></TR>
+	
+	
+</TABLE>
+
+</CENTER>
+</BODY>
+</HTML>

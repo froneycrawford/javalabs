@@ -1,0 +1,163 @@
+<HTML>
+
+<HEAD>
+	<TITLE>GalCrash - Physics of the Applet</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function launchWindow (url, name, width, height) {
+   var x = 0;
+   var y = 0;
+   if (navigator.appVersion.length > 0 && navigator.appVersion.charAt(0) > '3' && navigator.appVersion.charAt(0) <= '9') {
+       if(width > screen.availWidth - 12) {
+           width = screen.availWidth - 12;
+       }
+       if(height > screen.availHeight - 48) {
+           height = screen.availHeight - 48;
+       }
+       x = (screen.availWidth - 12 - width) / 2;
+       y = (screen.availHeight - 48 - height) / 2;
+   }
+   var params =  "status=0,scrollbars=1,resizable=1,screenX=" + x + ",screenY=" + y + ",width=" + width + ",height=" + height + ")";
+   var windowvar = window.open(url, name, params);
+}
+function launchApplet() {
+   var name = "GalCrash";
+   var url = "GCSolo.html";
+   launchWindow (url, name, 700, 600);
+}
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY BACKGROUND="backgrnd.jpg" BGCOLOR="000000" TEXT="FFFFFF">
+
+<!-- Page divided using TABLES-->
+<TABLE WIDTH=100% BORDER="0" CELLSPACING="0" CELLPADDING="2">
+
+<!-- First Row for title graphic-->
+<TR ><TD ALIGN=right VALIGN=TOP COLSPAN=3>
+<A HREF="main.html"><IMG SRC="title.jpg" ALIGN=right HEIGHT=50 WIDTH=450 ALT="Galaxy Crash" BORDER="0">
+</TD></TR>
+
+<!-- Second Row for Menu and Page Text-->
+<TR>
+<TD WIDTH=130 VALIGN="TOP" ALIGN=left>
+	<TABLE BORDER="0" WIDTH=130 CELLSPACING="0" CELLPADDING="0">
+		<TR>
+			<TD ALIGN="left" VALIGN="top">
+			<IMG SRC="menu3a.gif" HEIGHT=500 WIDTH=150 ALT="Menubar" BORDER="0" USEMAP="#imap" ISMAP>
+
+			<MAP NAME="imap">
+			<AREA SHAPE="RECT" COORDS="0,0,150,45" ALT="Background" HREF="backgrnd.html">
+			<AREA SHAPE="RECT" COORDS="0,45,150,85" ALT="Applet" HREF="javascript:launchApplet()">
+			<AREA SHAPE="RECT" COORDS="0,85,150,120" ALT="Controls" HREF="controls.html">
+			<AREA SHAPE="RECT" COORDS="0,120,150,170" ALT="Physics of the Applet" HREF="appPhys.html">
+			<AREA SHAPE="RECT" COORDS="0,170,150,215" ALT="Lab" HREF="labIntro.html">
+			<AREA SHAPE="RECT" COORDS="0,215,150,255" ALT="Links" HREF="links.html">
+			<AREA SHAPE="DEFAULT">
+			</MAP>
+			</TD>
+		</TR>
+	</TABLE>
+</TD>
+
+<!-- Provide nice 'white space' for page-->
+<TD>&nbsp; &nbsp; &nbsp;</TD>
+
+<TD VALIGN="top"><!-- All Text goes here --><BR><BR>
+
+<FONT COLOR="#FF0000"><H2>Mechanics of the Applet</H2></FONT>
+
+<FONT SIZE=+1 COLOR="00FF00">I. Evolving the model</FONT>
+
+<P>
+How do we simulate interacting galaxies? If we know an objects position (x)
+and velocity (v), and if we can calculate the acceleration (a) on it, then we 
+can "step it forward in time" by the formula combined formulae
+<BR>
+<BLOCKQUOTE>
+x<SUB>new</SUB> = x + v&middot;dt + &frac12;&middot;a&middot;(dt)&sup2;<BR>
+v<SUB>new</SUB> = v + a&middot;dt
+</BLOCKQUOTE>
+
+<P>
+which gives us the new position and velocity after a time dt. So how do we
+calculate the acceleration? It all comes down to the force of gravity. 
+Something at a distance r from an object of mass M will feel an acceleration
+due to gravity of -GM/r &sup2;, where <I>G</I> is the gravitational constant. If there
+are two massive objects, you just add together the gravitational acceleration
+from each object. So the stars orbiting a given galaxy in the applet feel the
+acceleration from their own galaxy (which makes them orbit inside their galaxy) plus an acceleration from the other galaxy (which tries to pull them off their
+orbit).
+
+<P>
+To calculate the force from a galaxy, we treat the galaxy as having a fixed 
+shape (see SIII below for more on this). This allows us to make an analytic
+calculation of the gravitational force. In reality, however, the shape of the
+galaxy changes as it interacts with its partner, simply because the partner's
+gravity is pulling it out of shape. To calculate this in a fully self-consistent
+manner is hard (you need to calculate all the gravitational forces between all
+the stars and dark matter particles which make up the galaxies!), and takes
+a very large amount of computing time to get it right (ie we cant do it in a 
+real time applet). So the use of a fixed shape for the galaxies speeds up
+the calculations enormously, but sacrifices some accuracy. However, the basic
+gravitational physics is still well-modeled, once we apply a bit of a trick
+(called the Chandrasekhar dynamical friction formula, see SII) to allow 
+galaxies to merge.
+
+(If you want to see examples of fully self-consistent modeling, go to the
+Links page and follow links to models of colliding galaxies.)
+
+
+So the way the model is evolved is to
+<OL>
+	<LI>Initialize the positions and velocities of the stars and galaxies.
+	<LI>Calculate the force acting on each of the stars from the two galaxies.
+	<LI>Calculate the force acting on each galaxy from the other galaxy.
+	<LI>Step the stars and galaxies forward by a small timestep dt.
+	<LI>Go back to 2.
+</OL>
+
+<FONT SIZE=+1 COLOR="00FF00">II. Dynamical Friction</FONT>
+
+<P>
+Galaxies merge because of dynamical friction, which is a pseudo-frictional
+force which occurs when a massive object moves through a sea of lower mass 
+particles. This distorts the background sea of particles, creating an 
+enhancement of density behind the massive object, pulling it back from its
+direction of motion. This is exactly what we have here -- a massive galaxy
+moving through a sea of dark matter particles (the other galaxy's halo).
+This dynamical friction brakes the galaxies on their orbit, and causes them
+to merge.
+
+<P>
+Unfortunately, in a model like Galaxy Crash, which holds the potential of the
+galaxies fixed in time, dynamical friction does not occur (in short, we have 
+simplified the problem too much). But we can make an analytic approximation
+to dynamical friction, known as the Chandrasekhar formula. This formula
+says that the galaxies should feel a frictional force due to dynamical 
+friction which is proportional to M &middot; rho / v &sup2;, where M is the mass of the
+big object, rho is the density of the background sea, and v is the speed
+at which the big object is moving. So in Galaxy Crash, we can calculate for
+each galaxy, its speed and the density it is moving through, and apply this
+Chandrasekhar formula to mimic the frictional force it should experience.
+<BR><BR>
+
+<FONT SIZE=+1 COLOR="00FF00">III. Galaxy models</FONT>
+
+<P>
+As we said, we treat the mass distribution of the galaxies as fixed
+with time (even though they would in practice become very distorted) --
+in other words, the gravitational potential of each galaxy does not
+change. So what does it look like? We use a spherical density distribution 
+known as the logarithmic potential, where the mass inside a radius r
+is proportional to <WBR>r &sup3; / (a+r) &sup2;<WBR>, where a is a scale radius. This gives
+a galaxy where the circular velocity rises smoothly in the inner region,
+then remains flat out until the halo ends. We take the halo to be truncated
+at twice the maximum radius of the stars, but the "Big Halo" option allows
+you to study what would happen if we make the halos extend four times further
+in radius.
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>
